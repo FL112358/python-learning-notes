@@ -23,3 +23,24 @@ s2 = 'listen'
 print('anagram') if Counter(s1) == Counter(s2) else print('not an anagtam')
 ~~~
 > anagram
+
+## Binary to decimal
+~~~
+d = int('1010', 2)
+print(d)
+~~~
+> 10
+
+## Quick sort
+~~~
+qsort = lambda lis: lis if len(lis) <= 1 else qsort([x for x in lis[1:] if x < lis[0]]) + [lis[0]] + qsort([x for x in lis[1:] if x >= lis[0]])
+print(qsort([17, 29, 11, 97, 103, 5]))
+~~~
+> [5, 11, 17, 29, 97, 103]
+
+## Sum of n consecutive numbers
+~~~
+n = 5
+print(sum(range(1, n+1)))
+~~~
+> 15
