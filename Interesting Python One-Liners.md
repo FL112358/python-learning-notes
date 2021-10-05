@@ -44,3 +44,12 @@ n = 5
 print(sum(range(1, n+1)))
 ~~~
 > 15
+
+## Ceiling division
+~~~
+a, b = 11, 4
+print(-(-a // b))
+~~~
+> 3
+
+
