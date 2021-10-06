@@ -52,4 +52,18 @@ print(-(-a // b))
 ~~~
 > 3
 
+## Use "for" in list comprehensions
+~~~
+print([number for number in [1, 2, 3, 4] if number % 2 == 0])
+~~~
+> [2, 4]
+
+~~~
+# numbers of elements that smaller than x in a m*n Multiplication Table
+m = 4
+n = 3
+x = 5
+print(sum(min(x // i, n) for i in range(1, m+1)))
+~~~
+> 7
 
